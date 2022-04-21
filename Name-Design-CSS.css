@@ -1,0 +1,38 @@
+*{
+	box-sizing : border-box;
+}
+
+body{
+	background-color : black;
+	background: radial-gradient(elipse at bottom, #022227 0%, #000000 100%);
+	position : relative;
+	height : 100vh;
+	width : 100vw;
+	margin : 0;
+	display : grid;
+	text-align : center;
+}
+
+@keyframes shine{
+	from{
+		background-position : center 0;
+	}
+	to{
+		background-position : center 200%;
+	}
+}
+
+h1{
+	margin: 0;
+	font-family : "montserrat", sans-serif;
+	font-size : 30vh;
+	letter-spacing : 1vw;
+	color : white;
+	background : url(download.jpg);
+	background-size : auto 200%;
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+	animation : shine 8s linear infinite;
+}
+
+
